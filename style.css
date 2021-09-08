@@ -1,39 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  }
+
 ::root {
   font-size: 18px;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  background-color: #F8F1F1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+
 }
+
 
 nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
+  flex-direction: row;
+  justify-content: center;
+   width: 100vw;
   height: 3rem;
-  padding: 1rem 0;
-  position: relative;
-  background: #000;
+  padding: 1rem 0; 
+  background-color: #11698E;
+
 }
+
 nav ul {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: row;
   list-style-type: none;
+
 }
-nav ul li {
+
+ nav ul li {
   padding: 1rem;
-  text-align: center;
-}
+  /* text-align: center; */
+
+} 
+
 nav ul a {
   text-decoration: none;
   color: #2e2b2b;
+
 }
-nav .checkbox {
+
+/* li :hover{
+  color: #000; */
+
+ nav .checkbox {
   display: none;
+
 }
+
 nav .hamContainer {
   margin-right: 1rem;
 }
@@ -48,16 +69,39 @@ nav .hamburger::before {
 nav .hamburger {
   position: relative;
 }
+
 nav .hamburger::after {
   position: absolute;
   bottom: -10px;
+
 }
+
 nav ::before {
   position: absolute;
   top: -10px;
+
 }
-nav img {
-  max-width: 5rem;
+
+ /* .img {
+   max-width: 30px; 
+} */
+
+h1{
+  color: #11698E;
+  padding-left: 20px;
+
+}
+
+p{
+  padding-left: 20px;
+
+}
+
+.photos{
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  
 }
 
 footer {
